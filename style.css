@@ -1,0 +1,40 @@
+body {
+    margin: 0;
+}
+
+div {
+    width: 50px;
+    height: 50px;
+    background-color: tomato;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -25px;
+    margin-top: -25px;
+    animation: color-shift, move-sideways 2s infinite alternate ease-in-out;
+    animation-name: color-shift, move-sideways, topiks;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-delay: 2s;
+    animation-timing-function: ease-in-out;
+    border-radius: `;
+}
+
+div:hover {
+    animation-play-state: paused;
+}
+
+@keyframes move-sideways {
+    0% {
+        margin: 50px;
+        height: 50px;
+        padding: 50px;
+    }
+    50% {}
+    100% {
+        margin: 100px;
+        padding: 100px;
+        height: 100px;
+    }
+}
